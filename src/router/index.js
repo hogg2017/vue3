@@ -14,12 +14,13 @@ import {
 //制定对应的路由规则
 const publicRoutes = [{
   path: '/login',
-  component: () => import('@/views/login/login')
+  component: () => import('@/views/login/index')
 
 }]
 
+// 此处传入的key肯定还是routes的，设立公用和私用应该是要根据用户登录的权限来做动态的切换
 const router = createRouter({
   history: createWebHashHistory(),
-  publicRoutes
+  routes: publicRoutes
 })
 export default router
