@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     "no-console": process.eventNames.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.eventNames.NODE_ENV === "production" ? "warn" : "off",
-    "no-trailing-spaces": "off"
+    "no-trailing-spaces": "off",
+    "spaced-comment": "off"
   }
 }
