@@ -53,5 +53,34 @@ $cursor: #fff;
   min-height: 100%;
   width: 100%;
   background-color: $bg;
+  overflow: hidden;
+  .login-form {
+    //   为什么都要设置 relative
+    position: relative;
+    width: 520px;
+    //padding
+    padding: 160px 35px 0;
+    margin: 0 auto;
+    overflow: hidden;
+    ::v-deep .el-form-item {
+      border: 1px solid rgba(255, 255, 255, 0);
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      color: #454545;
+    }
+    ::v-deep .el-input {
+      display: inline-block;
+      height: 47px;
+      width: 85%;
+      input {
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        padding: 12px 15px 12px 15px;
+        color: $light_gray;
+        cursor: $cursor;
+      }
+    }
+  }
 }
 </style>
