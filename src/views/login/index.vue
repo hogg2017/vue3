@@ -74,6 +74,7 @@ $cursor: #fff;
       width: 85%;
       input {
         background: transparent;
+        // background: red;
         border: none;
         border-radius: 0px;
         padding: 12px 15px 12px 15px;
@@ -81,6 +82,30 @@ $cursor: #fff;
         cursor: $cursor;
       }
     }
+  }
+  .svg-container {
+    padding: 6px 5px 6px 15px;
+    color: $dark_gray;
+    vertical-align: middle; //对齐方式
+    display: inline-block;
+  }
+  .title-container {
+    position: relative;
+    .title {
+      font-size: 26px;
+      color: $light_gray;
+      margin: 0px auto 40px auto;
+      font-weight: bold;
+    }
+  }
+  .show-pwd {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 16px;
+    color: $dark_gray;
+    cursor: pointer;
+    user-select: none;
   }
 }
 </style>
