@@ -42,6 +42,8 @@
 <script setup>
 //倒入的组件可以直接用，不需要在注册
 import { Avatar } from '@element-plus/icons'
+// 登录函数
+
 </script>
 
 <style lang="scss" scoped>
